@@ -35,7 +35,7 @@ class CountryData extends React.Component {
         fetch("https://covid-193.p.rapidapi.com/history?country=" + encodeURI(this.props.selectedCountry), {
             "method": "GET",
             "headers": {
-                "x-rapidapi-key": "b4fd3bfb15msh73e8b47c43ac8edp14789fjsn2c9fa87761ea",
+                "x-rapidapi-key": "RAPIDAPIKEY",
                 "x-rapidapi-host": "covid-193.p.rapidapi.com"
             }
         })

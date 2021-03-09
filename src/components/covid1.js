@@ -1,8 +1,7 @@
 import React from 'react'
 import NumberFormat from 'react-number-format';
 import { Card, Header } from 'semantic-ui-react'
-import { FlexboxGrid } from 'rsuite'; 
-import { Avatar } from 'antd';
+import { FlexboxGrid, Avatar } from 'rsuite'; 
 import TestTubeIcon from 'mdi-react/TestTubeIcon';
 import GraveStoneIcon from 'mdi-react/GraveStoneIcon';
 import ThumbUpIcon from 'mdi-react/ThumbUpIcon'
@@ -45,7 +44,7 @@ class Covid1 extends React.Component {
                         <Card fluid>
                             <Card.Content>
                                 <Header as='h2'>
-                                    <Avatar size={50} icon={<TestTubeIcon color="#fff" size={32} style={{marginTop: '0.4em'}}/>} style={{backgroundColor: '#a989df', marginRight: '0.5em'}}/>
+                                    <Avatar circle size="lg" style={{backgroundColor: '#7cb7c5', marginRight: '0.5em'}}><TestTubeIcon color="#fff" size={32} style={{marginTop: '0.2em'}}/></Avatar>
                                     <Header.Content>
                                         <NumberFormat value={this.state.countryData.cases.total} displayType={'text'} thousandSeparator={true} />
                                         <Header.Subheader>Confirmed</Header.Subheader>
@@ -58,7 +57,7 @@ class Covid1 extends React.Component {
                         <Card fluid>
                             <Card.Content>
                                 <Header as='h2'>
-                                    <Avatar size={50} icon={<ThumbUpIcon color="#fff" size={32} style={{marginTop: '0.4em'}}/>} style={{backgroundColor: '#0abea1', marginRight: '0.5em'}}/>
+                                    <Avatar circle size="lg" style={{backgroundColor: '#79d2b0', marginRight: '0.5em'}}><ThumbUpIcon color="#fff" size={32} style={{marginTop: '0.2em'}}/></Avatar>
                                     <Header.Content>
                                         <NumberFormat value={this.state.countryData.cases.recovered} displayType={'text'} thousandSeparator={true} />
                                         <Header.Subheader>Recovered</Header.Subheader>
@@ -71,7 +70,7 @@ class Covid1 extends React.Component {
                         <Card fluid>
                             <Card.Content>
                                 <Header as='h2'>
-                                    <Avatar size={50} icon={ <HospitalIcon color="#fff" size={32} style={{marginTop: '0.4em'}}/>} style={{backgroundColor: '#fc5808', marginRight: '0.5em'}}/>
+                                    <Avatar circle size="lg" style={{backgroundColor: '#f79480', marginRight: '0.5em'}}><HospitalIcon color="#fff" size={32} style={{marginTop: '0.2em'}}/></Avatar>
                                     <Header.Content>
                                         <NumberFormat value={this.state.countryData.cases.critical} displayType={'text'} thousandSeparator={true} />
                                         <Header.Subheader>Critical</Header.Subheader>
@@ -84,7 +83,7 @@ class Covid1 extends React.Component {
                         <Card fluid>
                             <Card.Content>
                                 <Header as='h2'>
-                                    <Avatar size={50} icon={<GraveStoneIcon color="#fff" size={32} style={{marginTop: '0.4em'}}/>} style={{backgroundColor: '#333333', marginRight: '0.5em'}}/>
+                                    <Avatar circle size="lg" style={{backgroundColor: '#444', marginRight: '0.5em'}}><GraveStoneIcon color="#fff" size={32} style={{marginTop: '0.2em'}}/></Avatar>
                                     <Header.Content>
                                         <NumberFormat value={this.state.countryData.deaths.total} displayType={'text'} thousandSeparator={true} />
                                         <Header.Subheader>Deaths</Header.Subheader>
