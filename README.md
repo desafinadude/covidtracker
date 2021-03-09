@@ -2,9 +2,5 @@
 
 Exploring public Covid-19 API's
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
+![Alt text](./Public/Screenshot_1.jpg)
+![Alt text](./Public/Screenshot_2.jpg)
